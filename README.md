@@ -10,5 +10,6 @@
 **Spesifikasi Laptop**
 * **Spesifikasi Laptop:** Lenovo LOQ intel core i5-12450HX
 * **Kapasitas RAM & Memori:**  SSD 512GB & DDR5 12GB
+* **OS:** Windows 11 
 * **Versi Node.js:**  v24.11.0
 * **Versi Git:** v2.54.0.windows.1
