@@ -1,71 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initialscale=1.0">
-     <title>Resume HTML</title>
-
-     <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e8">
+  <meta name="description" content="Tentang Mochamad Zidane Bahtiar, mahasiswa Teknik Informatika yang tertarik pada pengembangan web.">
+  <title>Tentang Saya — Zidane Bahtiar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="about.css">
+  <script src="about.js" defer></script>
 </head>
-<body>
-     
-     <header>
-         <h1><center>Resume HTML</center></h1>
-         <nav>
-            <ul>
-<nav class="flex items-center gap-6 bg-white px-6 py-4">
-  <a href="index.html"
-     class="text-xl text-gray-800 transition duration-300 hover:-translate-y-1 hover:text-indigo-500">
-    Beranda
-  </a>
+<body id="top">
+  <header class="site-header">
+    <nav class="nav page-width" aria-label="Navigasi utama">
+      <a class="brand" href="index.html"><span class="brand-mark">z.</span><span>zidane bahtiar</span></a>
+      <div class="nav-links"><a href="index.html">Beranda</a><a class="current" href="Resume.html" aria-current="page">Tentang</a><a href="Project.html">Proyek</a><a href="kontak.html">Kontak</a></div>
+      <span class="availability"><i></i> Terbuka untuk kolaborasi</span>
+    </nav>
+  </header>
 
-  <a href="kontak.html"
-     class="text-xl text-gray-800 transition duration-300 hover:-translate-y-1 hover:text-indigo-500">
-    Hubungi saya
-  </a>
+  <main class="page-width">
+    <section class="about-hero">
+      <div class="about-copy">
+        <p class="eyebrow"><span>✳</span> SEDIKIT TENTANG SAYA <i>/ 2026</i></p>
+        <h1>Saya suka tahu<br>bagaimana sesuatu<br><em>bisa bekerja.</em></h1>
+        <p class="lede">Rasa penasaran itu yang membawa saya ke dunia informatika—dan membuat saya terus ingin mencoba hal baru di web.</p>
+        <a class="text-link" href="#cerita">Baca cerita saya <span>↓</span></a>
+      </div>
+      <aside class="profile-art" aria-label="Kartu profil Zidane Bahtiar">
+        <div class="profile-grid"></div><div class="profile-sun"></div>
+        <div class="profile-monogram">zb<span>.</span></div>
+        <span class="profile-star">✳</span><span class="profile-index">CATATAN DIRI<br>NO. 01</span>
+        <div class="profile-caption"><strong>Mochamad Zidane Bahtiar</strong><span>MAHASISWA · INFORMATIKA</span></div>
+      </aside>
+    </section>
 
-  <a href="resume.html"
-     class="text-xl text-gray-800 transition duration-300 hover:-translate-y-1 hover:text-indigo-500">
-    Resume
-  </a>
+    <section class="story-section" id="cerita">
+      <div class="section-index"><span>01</span><i></i><span>PERJALANAN SAYA</span></div>
+      <div class="story-grid">
+        <h2>Belajar paling baik<br>saat <em>langsung membuat.</em></h2>
+        <div class="story-copy"><p>Halo, saya Zidane, mahasiswa Teknik Informatika di Institut Teknologi Garut. Saya tertarik pada pengembangan aplikasi web modern—terutama bagaimana ide dan kode bisa bertemu menjadi sesuatu yang berguna untuk orang lain.</p><p>Saya menikmati prosesnya: menyusun alur, mencoba pendekatan, menemukan yang belum pas, lalu merapikannya lagi. Setiap proyek jadi kesempatan untuk memahami satu hal baru.</p><a class="text-link" href="Project.html">Lihat beberapa hasilnya <span>↗</span></a></div>
+      </div>
+    </section>
 
-  <a href="project.html"
-     class="text-xl text-gray-800 transition duration-300 hover:-translate-y-1 hover:text-indigo-500">
-    Project
-  </a>
-</nav>
-                <link rel="stylesheet" href="style.css">
-            </ul>
-        </nav>
-    </header>
- 
-     <hr>
+    <section class="interests-section" aria-labelledby="interest-title">
+      <div class="section-heading"><div><p class="eyebrow">HAL YANG SAYA JELAJAHI</p><h2 id="interest-title">Ruang untuk <em>bertumbuh.</em></h2></div><p class="section-hint">Pilih topik untuk melihat catatan<br>belajar saya.</p></div>
+      <div class="interest-layout">
+        <div class="interest-tabs" role="tablist" aria-label="Minat dan area belajar">
+          <button class="interest-tab active" id="tab-web" type="button" role="tab" aria-selected="true" aria-controls="interest-panel" data-topic="web"><span>01</span> Pengembangan web <b>↗</b></button>
+          <button class="interest-tab" id="tab-js" type="button" role="tab" aria-selected="false" aria-controls="interest-panel" data-topic="js"><span>02</span> JavaScript <b>↗</b></button>
+          <button class="interest-tab" id="tab-ideas" type="button" role="tab" aria-selected="false" aria-controls="interest-panel" data-topic="ideas"><span>03</span> Ide jadi produk <b>↗</b></button>
+        </div>
+        <div class="interest-panel" id="interest-panel" role="tabpanel" aria-labelledby="tab-web" aria-live="polite">
+          <span class="panel-mark" aria-hidden="true">✳</span>
+          <p class="panel-kicker">YANG SEDANG SAYA PELAJARI</p>
+          <h3 id="panelTitle">Pengembangan web</h3>
+          <p id="panelText">Merancang halaman yang mudah dipahami, nyaman digunakan, dan tetap terasa punya karakter.</p>
+          <div class="topic-tags" id="panelTags"><span>HTML & CSS</span><span>JavaScript</span><span>Next.js</span></div>
+        </div>
+      </div>
+    </section>
 
-     <main>
-        <section>
-             <h2>Kirim Resume Pertemuan 2</h2>
-             <form>
+    <section class="principle-section">
+      <div class="principle-label"><span class="section-index">02 <i></i> PEGANGAN</span><span class="principle-star">✳</span></div>
+      <blockquote>“Buat dulu, pelajari prosesnya, <em>lalu buat lebih baik.</em>”</blockquote>
+      <p>Hal sederhana yang mengingatkan saya untuk terus bergerak.</p>
+    </section>
 
-                 <p>
-                     <label for="pesan">Deskripsi<br>
-                     <textarea id="pesan" name="pesan" rows="6" cols="50"></textarea>
-                 </p>
-
-                 <p>
-                     <button type="submit">Kirim Pesan</button>
-                     <button type="reset">Batal / Reset</button>
-                 </p>
-
-             </form>
-         </section>
-
-          </main>
-
-     <hr>
-
-     <footer>
-         <p>&copy; 2026 : Resume HTML - Mochamad Zidane Bahtiar</p>
-     </footer>
-     
+    <section class="about-cta"><div><p class="eyebrow">PUNYA IDE ATAU PERTANYAAN?</p><h2>Yuk, <em>ngobrol.</em></h2></div><a class="cta-button" href="kontak.html">Hubungi saya <span>↗</span></a></section>
+  </main>
+  <footer class="footer"><div class="page-width footer-inner"><a class="brand" href="index.html"><span class="brand-mark">z.</span><span>zidane bahtiar</span></a><span>Dibuat dengan rasa ingin tahu <b>✳</b> 2026</span><a href="#top" class="back-top">Kembali ke atas ↑</a></div></footer>
 </body>
 </html>

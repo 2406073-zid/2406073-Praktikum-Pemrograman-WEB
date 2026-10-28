@@ -1,97 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initialscale=1.0">
-     <title>Modul 2 - Form Kontak</title>
-
-     <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e8">
+  <meta name="description" content="Hubungi Mochamad Zidane Bahtiar untuk kolaborasi dan proyek web melalui WhatsApp.">
+  <title>Hubungi Saya — Zidane Bahtiar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+  <script src="contact.js" defer></script>
 </head>
-<body>
-
-     <header>
-         <h1><center>Form kontak</center></h1>
-         <nav>
-            <ul>
-            <nav class="flex items-center gap-6 bg-white px-6 py-4">
-  <a href="index.html"
-     class="text-xl text-gray-800 transition duration-300 hover:-translate-y-1 hover:text-indigo-500">
-    Beranda
-  </a>
-
-  <a href="kontak.html"
-     class="text-xl text-gray-800 transition duration-300 hover:-translate-y-1 hover:text-indigo-500">
-    Hubungi saya
-  </a>
-
-  <a href="resume.html"
-     class="text-xl text-gray-800 transition duration-300 hover:-translate-y-1 hover:text-indigo-500">
-    Resume
-  </a>
-
-  <a href="project.html"
-     class="text-xl text-gray-800 transition duration-300 hover:-translate-y-1 hover:text-indigo-500">
-    Project
-  </a>
-</nav>
-                <link rel="stylesheet" href="style.css">
-            </ul>
-        </nav>
-    </header>
-     </header>
-
-     <hr>
-
-     <main>
-         <section>
-             <h2>Kirimkan Pesan atau Penawaran Proyek</h2>
-             <form>
-
-                 <p>
-                     <label for="nama_pengirim">Nama Lengkap
-Anda:</label><br>
-                     <input type="text" id="nama_pengirim"
-name="nama_pengirim">
- </p>
-
-                <p>
-                     <label for="email_pengirim">Alamat
-Email:</label><br>
-                     <input type="email" id="email_pengirim"
-name="email_pengirim">
- </p>
-
-                 <p>
-                     <label for="jenis_layanan">Layanan yang
-Dibutuhkan:</label><br>
-                     <select id="jenis_layanan" name="jenis_layanan">
-                         <option value="">-- Pilih Layanan --</option>
-                         <option value="web">Pembuatan Web</option>
-                         <option value="app">Pengembangan
-Aplikasi</option>
-                         <option value="other">Lain-lain</option>
-                     </select>
-                 </p>
-
-                 <p>
-                     <label for="pesan">Deskripsi<br>
-                     <textarea id="pesan" name="pesan" rows="6" cols="50"></textarea>
-                 </p>
-
-                 <p>
-                     <button type="submit">Kirim Pesan</button>
-                     <button type="reset">Batal / Reset</button>
-                 </p>
-
-             </form>
-         </section>
-     </main>
-
-     <hr>
-
-     <footer>
-         <p>&copy; 2026 Teknik Informatika ITG</p>
-     </footer>
-     
+<body id="top">
+  <header class="site-header">
+    <nav class="nav page-width" aria-label="Navigasi utama">
+      <a class="brand" href="index.html"><span class="brand-mark">z.</span><span>zidane bahtiar</span></a>
+      <div class="nav-links"><a href="index.html">Beranda</a><a href="Resume.html">Tentang</a><a href="Project.html">Proyek</a><a class="current" href="kontak.html" aria-current="page">Kontak</a></div>
+      <span class="availability"><i></i> Terbuka untuk kolaborasi</span>
+    </nav>
+  </header>
+  <main class="page-width">
+    <section class="contact-hero">
+      <div class="contact-copy">
+        <p class="eyebrow"><span>✳</span> ADA IDE? ADA PERTANYAAN?</p>
+        <h1>Mari mulai<br>dengan <em>obrolan.</em></h1>
+        <p class="lede">Punya ide proyek, ingin berkolaborasi, atau sekadar ingin menyapa? Kirim pesan, saya akan senang mendengarnya.</p>
+        <a class="whatsapp-direct" href="https://wa.me/6282121573028" target="_blank" rel="noopener noreferrer"><span class="wa-icon" aria-hidden="true">◉</span><span><small>CHAT LANGSUNG VIA</small><strong>WhatsApp <b aria-hidden="true">↗</b></strong></span></a>
+      </div>
+      <aside class="contact-art" aria-label="Informasi kontak WhatsApp">
+        <div class="art-orbit"></div><div class="art-orbit second"></div><div class="chat-bubble"><span class="bubble-dots"><i></i><i></i><i></i></span><span class="bubble-tail"></span></div>
+        <span class="art-cross">✳</span><span class="art-caption">SATU PESAN BISA JADI<br>AWAL SESUATU.</span><span class="art-number">+62 821 2157 3028</span>
+      </aside>
+    </section>
+    <section class="contact-content" aria-labelledby="form-title">
+      <div class="contact-note"><span class="section-number">01 <i></i> KONTAK</span><h2 id="form-title">Hal baik sering<br>dimulai dari <em>halo.</em></h2><p>Isi formulir singkat ini. Pesanmu akan disiapkan dan dibuka di WhatsApp agar bisa langsung dikirim.</p><div class="response-note"><span>↳</span> Biasanya membalas dalam 1–2 hari</div></div>
+      <form class="contact-form" id="contactForm">
+        <label for="name">Nama kamu <span>*</span><input id="name" name="name" type="text" autocomplete="name" maxlength="80" placeholder="Nama lengkap" required></label>
+        <label for="email">Email <small>(opsional)</small><input id="email" name="email" type="email" autocomplete="email" maxlength="120" placeholder="nama@email.com"></label>
+        <label for="service">Topik obrolan<select id="service" name="service" required><option value="" disabled selected>Pilih topik</option><option>Proyek website</option><option>Pengembangan aplikasi</option><option>Kolaborasi</option><option>Lainnya</option></select></label>
+        <label for="message">Ceritakan sedikit <span>*</span><textarea id="message" name="message" rows="4" maxlength="1000" placeholder="Apa yang sedang kamu pikirkan?" required></textarea></label>
+        <div class="form-bottom"><button type="submit">Siapkan pesan WhatsApp <span aria-hidden="true">↗</span></button><p id="formHint" aria-live="polite">WhatsApp akan terbuka dengan pesan yang sudah terisi.</p></div>
+      </form>
+    </section>
+  </main>
+  <footer class="footer"><div class="page-width footer-inner"><a class="brand" href="index.html"><span class="brand-mark">z.</span><span>zidane bahtiar</span></a><span>Dibuat dengan rasa ingin tahu <b>✳</b> 2026</span><a href="#top" class="back-top">Kembali ke atas ↑</a></div></footer>
 </body>
 </html>
